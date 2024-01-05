@@ -1,0 +1,14 @@
+{
+    "builds":[
+        {
+            "src":"player.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest": "player.py"
+        }
+    ]
+}
